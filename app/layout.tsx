@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./themeProvider/page";
 import { Kanit } from "next/font/google";
+import Script from "next/script";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main>{children}</main>
         </ThemeProvider>
+        <Script src="../path/to/flowbite/dist/flowbite.min.js" />
       </body>
     </html>
   );

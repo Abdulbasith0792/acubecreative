@@ -1,5 +1,6 @@
 import Banner from "@/components/home/banner";
 import Services from "@/components/home/services";
+import Work from "@/components/home/work";
 import Footer from "@/components/utils/footer";
 import Navbar from "@/components/utils/navbar";
 import ThemeSwitch from "@/components/utils/themeSwitch";
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Services />
+      <Work />
       <Footer />
     </div>
   );
