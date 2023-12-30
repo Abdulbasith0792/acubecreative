@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./themeProvider/page";
 import { Kanit } from "next/font/google";
 import Script from "next/script";
+import Navbar from "@/components/utils/navbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,9 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${kanit.className} bg-[#f5f5f5] dark:bg-[#000]`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main>{children}</main>
+      <body className={`${kanit.className} bg-[#fff] dark:bg-[#000] scrollbar-thin scrollbar-thumb-orange-500 dark:scrollbar-track-transparent dark:scrollbar-none scrollbar-track-inherit dark:scrollbar-thumb-white  `}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
+          <div className="scrollbar-hide">
+            <Navbar />
+            {children}</div>
         </ThemeProvider>
         <Script src="../path/to/flowbite/dist/flowbite.min.js" />
       </body>

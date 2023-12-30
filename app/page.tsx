@@ -1,4 +1,5 @@
 import Banner from "@/components/home/banner";
+import RevenueBanner from "@/components/home/revenueBanner";
 import Services from "@/components/home/services";
 import Work from "@/components/home/work";
 import Footer from "@/components/utils/footer";
@@ -9,8 +10,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
+      <RevenueBanner />
       <Services />
       <Work />
       <Footer />

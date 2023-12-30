@@ -10,7 +10,7 @@ const rowdies = Rowdies({ weight: "700", subsets: ["vietnamese"] });
 
 const Banner = () => {
   return (
-    <div className="flex  items-center lg:items-start flex-col lg:flex-row  lg:justify-between px-5 lg:px-40 lg:mt-16  mt-4">
+    <div className="flex  items-center lg:items-start flex-col lg:flex-row  lg:justify-between px-5 lg:px-40   mt-4 lg:mt-0 lg:h-[80vh]">
       {/* <div className='h-[75vh] w-[105vh] bg-green-400 dark:bg-orange-600 rounded-full blur-[96px] opacity-60 dark:opacity-20'/> */}
       <div className="">
         <div
@@ -19,10 +19,10 @@ const Banner = () => {
         >
           <div className="">Scale</div>
           <div className="text-[#0352ff]">Your</div>
-          <div className="text-orange-600">Business</div>
+          <div className="text-orange-500">Business</div>
         </div>
-        <div className="font-bold pl-2 mt-10 text-md lg:text-lg">
-          <div>Website Landing   <span >&#160;&#160;</span>|<span >&#160;&#160;</span>   Digital Marketing <span>&#160;&#160;</span>|<span>&#160;&#160;</span></div>
+        <div className="font-bold pl-2 mt-10 t ext-md lg:text-lg">
+          <div>Development  <span >&#160;&#160;</span>|<span >&#160;&#160;</span>   Digital Marketing <span>&#160;&#160;</span>|<span>&#160;&#160;</span></div>
           
           <div>Social Media Management </div>
         </div>
@@ -31,7 +31,7 @@ const Banner = () => {
         <div className="w-[40vh] lg:w-[70vh] dark:hidden block">
           <Lottie animationData={anime} loop={true} />
         </div>
-        <div className="w-[40vh] lg:w-[70vh] dark:block hidden">
+        <div className="w-[40vh] lg:w-[70vh] dark:block hidden ">
           <Lottie animationData={anime_dark} loop={true} />
         </div>
       </div>
