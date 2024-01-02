@@ -15,7 +15,7 @@ export default function Home() {
       <RevenueBanner />
       <Services />
       <Work />
-      <Footer />
+    
     </div>
   );
 }

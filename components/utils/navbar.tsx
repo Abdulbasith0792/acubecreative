@@ -34,11 +34,11 @@ const Navbar = () => {
         <div className='flex justify-start items-center lg:gap-8 gap-3 '>
             <ul className='lg:flex gap-11 justify-center items-center text-lg font-semibold hidden '> 
                 <li className='relative group py-2 hover:transition-all   cursor-pointer '><div  onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)} className='flex hover:text-orange-500 dark:hover:text-blue-600 hover:transition hover:duration-300 hover:ease-in-out justify-center items-center gap-1'>Services {isHovered  ? (<IoIosArrowDown />) :(<GoDotFill />)} </div> <div className="hidden  group-hover:block absolute my-2 shadow-md p-4 w-[275px] bg-white dark:bg-zinc-900 rounded-md">
+          onMouseLeave={() => setIsHovered(false)} className='flex hover:dark:text-orange-500 hover:text-blue-600 hover:transition hover:duration-300 hover:ease-in-out justify-center items-center gap-1'>Services {isHovered  ? (<IoIosArrowDown />) :(<GoDotFill />)} </div> <div className="hidden  group-hover:block absolute my-2 shadow-md p-4 w-[275px] bg-white dark:bg-zinc-900 rounded-md">
            <ul className='flex flex-col gap-4'>
-            <li className='flex gap-2 items-center hover:text-orange-500 dark:hover:text-blue-600'>Development <FaArrowRightLong /></li>
-            <li className='flex gap-2 items-center hover:text-orange-500 dark:hover:text-blue-600'>Social Media Management <FaArrowRightLong /></li>
-            <li className='flex gap-2 items-center hover:text-orange-500 dark:hover:text-blue-600'>Digital Marketing <FaArrowRightLong /></li>
+            <li className='flex gap-2 items-center hover:dark:text-orange-500 hover:text-blue-600'>Development <FaArrowRightLong /></li>
+            <li className='flex gap-2 items-center hover:dark:text-orange-500 hover:text-blue-600'>Social Media Management <FaArrowRightLong /></li>
+            <li className='flex gap-2 items-center hover:dark:text-orange-500 hover:text-blue-600'>Digital Marketing <FaArrowRightLong /></li>
             
             <li></li>
            </ul>

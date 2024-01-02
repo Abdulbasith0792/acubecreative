@@ -40,14 +40,14 @@ const RevenueBanner = () => {
           </div>
         </div>
         <div className=" lg:w-[60%] lg:h-screen lg:px-28 lg:py-10 dark:bg-white bg-black">
-          <div className="uppercase text-orange-500 dark:text-blue-600 text-[70px]  font-bold leading-[70px] mb-10 hidden lg:block">
+          <div style={nunito.style} className="uppercase tracking-tighter text-orange-500 dark:text-blue-600 text-5xl lg:text-[70px]  font-bold lg:leading-[70px] mb-10 hidden lg:block">
             How we generate revenue
           </div>
           <div className="flex flex-col gap-5 text-white dark:text-black font-bold my-10 pl-3 lg:pl-0 lg:my-0 text-sm lg:text-lg" style={nunito.style} >
-            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:bg-orange-500 bg-blue-500 h-6 w-6 text-lg"><TiTick /></div>ENHANCE BRAND COMMUNICATION AND BOOST CONVERSION</div>
-            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:bg-orange-500 bg-blue-500 h-6 w-6 text-lg"><TiTick /></div>DRIVE WEBSITE TRAFFIC</div>
-            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:bg-orange-500 bg-blue-500 h-6 w-6 text-lg"><TiTick /></div>DEVELOP AND OVERSEE EFFECTIVE ADVERTISING CAMPAIGNS</div>
-            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:bg-orange-500 bg-blue-500 h-6 w-6 text-lg"><TiTick /></div>GATHER, EVALUATE, AND UTILIZE MARKETING DATA</div>
+            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:text-orange-500 text-blue-500  lg:text3xl text-xl"><TiTick /></div>ENHANCE BRAND COMMUNICATION AND BOOST CONVERSION</div>
+            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:text-orange-500 text-blue-500  lg:text3xl text-xl"><TiTick /></div>DRIVE WEBSITE TRAFFIC</div>
+            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:text-orange-500 text-blue-500  lg:text3xl text-xl"><TiTick /></div>DEVELOP AND OVERSEE EFFECTIVE ADVERTISING CAMPAIGNS</div>
+            <div className="flex  gap-x-2" ><div className="rounded-full flex items-center justify-center dark:text-orange-500 text-blue-500  lg:text3xl text-xl"><TiTick /></div>GATHER, EVALUATE, AND UTILIZE MARKETING DATA</div>
             
           </div>
         </div>

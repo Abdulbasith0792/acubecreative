@@ -48,25 +48,19 @@ const Footer = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <div className=" mb-5">
+    <div className="bg-black py-10">
       <div className="flex justify-center flex-col lg:flex-row  gap-x-40">
         <div className="flex items-center lg:items-start justify-start  flex-col  gap-3  mb-5">
-          <Image
-            src={Logo_Text}
-            height={100}
-            width={200}
-            alt=""
-            className="h-16 lg:w-full lg:h-[60px] w-[36%] dark:hidden block"
-          />
+          
           <Image
             src={Logo_Text_Dark}
             height={100}
             width={200}
             alt=""
-            className="h-16 lg:w-full lg:h-[60px] w-[36%] dark:block hidden"
+            className="h-16 lg:w-full lg:h-[60px] w-[36%] "
           />
           <div>
-            <ul className="flex justify-center gap-x-4 text-xl lg:text-lg my-1">
+            <ul className="flex justify-center gap-x-4 text-xl lg:text-lg my-1 text-white  ">
               <li className="hover:scale-110">
                 <Link href="">
                   <LuFacebook />
@@ -94,15 +88,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="hidden lg:block text-sm">
+          <div className="hidden lg:block text-sm text-white  ">
             <div>
               <span className="">&#169;</span> AcubeCreative.
             </div>
             <div>All rights reserved 2024 </div>
           </div>
         </div>
-        <div className="lg:flex flex-col gap-2 dark:text-gray-400 text-gray-600 hidden ">
-          <div style={rowdies.style} className="text-lg dark:text-white text-black">
+        <div className="lg:flex flex-col gap-2 text-gray-400    hidden ">
+          <div style={rowdies.style} className="text-lg text-white  ">
             Services
           </div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Social Media Management</div>
@@ -110,32 +104,32 @@ const Footer = () => {
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Facebook Ads</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Google Ads</div>
         </div>
-        <div className="lg:flex flex-col gap-2 dark:text-gray-400 text-gray-600 hidden ">
-          <div style={rowdies.style} className="text-lg dark:text-white text-black">
+        <div className="lg:flex flex-col gap-2 text-gray-400     hidden ">
+          <div style={rowdies.style} className="text-lg  text-white  ">
             Quick Links
           </div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Terms of Use</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Privacy Policy</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Refund Policy</div>
         </div>
-        <div className="lg:flex flex-col gap-2 dark:text-gray-400 text-gray-600 hidden ">
-          <div style={rowdies.style} className="text-lg dark:text-white text-black">
+        <div className="lg:flex flex-col gap-2 text-gray-400     hidden ">
+          <div style={rowdies.style} className="text-lg  text-white  ">
             About
           </div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">About Us</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Our Work</div>
-          <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Courses</div>
+          <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Learn</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Reach Us</div>
         </div>
         { data.map((item, index) =>(<div className="block lg:hidden mb-10 px-10" key={index}>
           <div className="flex justify-between  ">
-        <div style={rowdies.style} className="text-lg dark:text-white text-black">{item.title}</div>
-        <button onClick={() => toggleMenu(index)}  className="text-xl">{isOpen ? <TiMinus />: <TiPlus />}</button>
+        <div style={rowdies.style} className="text-lg text-white  ">{item.title}</div>
+        <button onClick={() => toggleMenu(index)}  className="text-xl text-white  ">{isOpen ? <TiMinus />: <TiPlus />}</button>
         
         </div>
           
 {isOpen && (
-  <div className="flex flex-col gap-y-2 mt-2">
+  <div className="flex flex-col gap-y-2 mt-2 text-white/70  /70">
 
               
               <div>{item.link1}</div>
@@ -148,16 +142,16 @@ const Footer = () => {
   )  
 
 }
-<div className="w-full h-[1px] bg-gray-300 mt-1 dark:bg-gray-500"/>
+<div className="w-full h-[1px] bg-gray-300 mt-1 "/>
 
         </div>
         
 ))}
-  <div className="lg:hidden flex justify-center flex-col items-center mb-10 text-md font-semibold">
+  <div className="lg:hidden flex justify-center flex-col items-center mb-10 text-md font-semibold text-zinc-100/70 ">
             <div>
               <span className="">&#169;</span> AcubeCreative.
             </div>
-            <div className="font-medium text-gray-700">All rights reserved 2024 </div>
+            <div className="font-medium text-zinc-100/50 ">All rights reserved 2024 </div>
           </div>
 
       </div>
