@@ -17,7 +17,7 @@ const Banner = () => {
           className="text-black dark:text-white text-[60px] lg:text-[90px] leading-[60px] lg:leading-[85px] mt-1"
           style={rowdies.style}
         >
-          <div className="">Scale</div>
+          <div className="">Grow</div>
           <div className="text-[#0352ff]">Your</div>
           <div className="text-orange-500">Business</div>
         </div>
@@ -30,6 +30,9 @@ const Banner = () => {
       <div>
         <div className="w-[40vh] lg:w-[70vh] dark:hidden block">
           <Lottie animationData={anime} loop={true} />
+          {/* <video autoPlay loop style={{ width: '500px', height: '500px' }}>
+          <source src="../../assets/animations/dff.mp4" />
+          </video> */}
         </div>
         <div className="w-[40vh] lg:w-[70vh] dark:block hidden ">
           <Lottie animationData={anime_dark} loop={true} />

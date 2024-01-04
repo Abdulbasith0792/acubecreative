@@ -73,7 +73,7 @@ const Services = () => {
           </div>
           {/* digital Marketing */}
           <div className="lg:bg-transparent bg-opacity-20  rounded-3xl px-6 py-4 gap-4 flex  items-center lg:items-start flex-col group cursor-pointer lg:hover:bg-white lg:hover:border  lg:border-zinc-300 lg:dark:hover:bg-[#131314] lg:dark:border-gray-700 transition-all duration-300">
-            <div className="bg-pink-400 rounded-lg px-3 py-2 w-fit">
+            <div className="bg-fuchsia-400 rounded-lg px-3 py-2 w-fit">
               <Image
                 src={digi}
                 width={100}

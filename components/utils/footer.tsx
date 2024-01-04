@@ -11,7 +11,8 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 import { Rowdies } from "next/font/google";
 import { initFlowbite } from "flowbite";
-import { TiMinus, TiPlus } from "react-icons/ti";
+import FooterDrop from "./footerDrop";
+
 
 const rowdies = Rowdies({ weight: "700", subsets: ["vietnamese"] });
 
@@ -121,32 +122,13 @@ const Footer = () => {
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Learn</div>
           <div className="cursor-pointer hover:text-blue-600 dark:hover:text-orange-600 transition-all duration-300">Reach Us</div>
         </div>
-        { data.map((item, index) =>(<div className="block lg:hidden mb-10 px-10" key={index}>
-          <div className="flex justify-between  ">
-        <div style={rowdies.style} className="text-lg text-white  ">{item.title}</div>
-        <button onClick={() => toggleMenu(index)}  className="text-xl text-white  ">{isOpen ? <TiMinus />: <TiPlus />}</button>
         
+        <div>
+          <FooterDrop title="Services" link1='Social Media Management' link2='Website Development' link3='Facebook Ads' link4='Google Ads' />
+          <FooterDrop  title="Quick Links" link1='Terms of Use' link2='Privacy Policy' link3='Refund Policy' link4=''/>
+          <FooterDrop  title="About" link1='About Us' link2='Our Work' link3='Learn' link4='Reach Us'/>
         </div>
-          
-{isOpen && (
-  <div className="flex flex-col gap-y-2 mt-2 text-white/70  /70">
 
-              
-              <div>{item.link1}</div>
-              <div>{item.link2}</div>
-              <div>{item.link3}</div>
-              <div>{item.link4}</div>
-              </div>
-             
-          
-  )  
-
-}
-<div className="w-full h-[1px] bg-gray-300 mt-1 "/>
-
-        </div>
-        
-))}
   <div className="lg:hidden flex justify-center flex-col items-center mb-10 text-md font-semibold text-zinc-100/70 ">
             <div>
               <span className="">&#169;</span> AcubeCreative.

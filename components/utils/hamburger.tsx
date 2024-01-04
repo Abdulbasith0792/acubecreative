@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import NavDrop from './navDrop';
 
 const Hamburger = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,7 @@ const Hamburger = () => {
     <span className='text-4xl right-5  absolute'><RxCross2 /></span>
       </button>
       <ul className='flex flex-col gap-11 justify-center items-center text-2xl mt-28 font-semibold '> 
-                <li>Services</li>
+                <li><NavDrop /></li>
                 <li>About</li>
                 <li>Work</li>
                 <li>Courses</li>
